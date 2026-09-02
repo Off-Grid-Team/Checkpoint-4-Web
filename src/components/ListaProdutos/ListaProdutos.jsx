@@ -67,6 +67,7 @@ const ListaProdutos = () => {
                                 <p>Categoria: {produto.categoria}</p>
                                 <button className="botao-comprar">Adicionar ao Carrinho</button>
                             </li>
+                            // Renderiza cada produto da lista obtida do arquivo JSON, exibindo seu nome, preço, categoria e um botão para adicionar ao carrinho
                         )
                     )
                     ) : (
