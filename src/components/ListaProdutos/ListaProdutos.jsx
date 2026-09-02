@@ -12,7 +12,7 @@ const ListaProdutos = () => {
                     setLoading(true)
                     setError(null)
                     
-                    const response = await fetch('https://raw.githubusercontent.com/Whipepe/teste-json/main/teste.json');
+                    const response = await fetch('https://raw.githubusercontent.com/Off-Grid-Team/Checkpoint-4-Web/dev/lista_produtos.json');
                     // Conecta à API e busca os dados do arquivo JSON
                     
                     if (!response.ok) {
@@ -58,14 +58,17 @@ const ListaProdutos = () => {
             <div className="">
                 <h2>Lista de Produtos</h2>
                 <ul>
-                    {data ? (
-                        <>
-                            <li>
-                                <h3 className=''>{data.nome}</h3>
-                                <p>{data.idade}</p>
-                                <p>{data.curso}</p>
+                    {data && data.produtos ? (
+                            
+                        data.produtos.map((produto) => (
+                            <li key={produto.id}>
+                                <h3>{produto.nome}</h3>
+                                <p>Preço: {produto.preco}</p>
+                                <p>Categoria: {produto.categoria}</p>
+                                <button className="botao-comprar">Adicionar ao Carrinho</button>
                             </li>
-                        </>
+                        )
+                    )
                     ) : (
                         <li>Nenhum dado disponível</li>
                     )}
