@@ -1,0 +1,57 @@
+.topbar {
+    width: 100%;
+    height: 64px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    background-color: #333;
+    color: white;
+
+    transition: background-color 0.3s ease;
+
+    z-index: 1000;
+}
+
+.topbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.topbar-menu {
+    display: flex;
+    gap: 24px;
+}
+
+.topbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.topbar-menu a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #aaa;
+}
+
+.botao-tema {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botao-tema:hover {
+    font-weight: bold;
+    color: #555;
+}
