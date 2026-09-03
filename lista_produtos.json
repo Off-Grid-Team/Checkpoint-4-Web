@@ -2,7 +2,7 @@
     "produtos": [
         {
         "id": 1,
-        "nome": "",
+        "nome": "Produto A",
         "preco": 10.99,
         "categoria": "Categoria 1"
         },
