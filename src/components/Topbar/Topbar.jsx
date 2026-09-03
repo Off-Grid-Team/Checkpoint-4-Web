@@ -87,7 +87,7 @@ const Topbar = () => {
     return (
         <>
             <header className="topbar">
-                <div className="topbar-logo">
+                <div className="flex items-center font-sans text-3xl font-black tracking-tight">
                     Off-Grid
                 </div>
 
